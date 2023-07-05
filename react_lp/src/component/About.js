@@ -14,7 +14,7 @@ export default class About extends Component {
                         <Row>
                             <Col lg={12}>
                                 <div className="title-heading mb-5">
-                                    <h3 className={this.props.isPrimary ? "text-white mb-1 fw-light text-uppercase" : "text-dark mb-1 fw-light text-uppercase"}>About Us</h3>
+                                    <h3 className={this.props.isPrimary ? "text-white mb-1 fw-light text-uppercase" : "text-dark mb-1 fw-light text-uppercase"}>Three Step Process</h3>
                                     <div className="title-border-simple position-relative"></div>
                                 </div>
                             </Col>
@@ -25,9 +25,9 @@ export default class About extends Component {
                                     <div className="about-icon mb-4">
                                         <i className="mdi mdi-lightbulb"></i>
                                     </div>
-                                    <h4 className="fw-light"><Link to="#" className={this.props.isPrimary ? "text-white" : "text-dark"}>Creative Design</Link></h4>
-                                    <p className={this.props.isPrimary ? "text-white-50 f-14" : "text-muted f-14"}>Nemo enim ipsam voluptatem quia voluptas sit aspernatur at aut odit
-                                        aut fugit sed quia consequuntur magni.</p>
+                                    <h4 className="fw-light"><Link to="#" className={this.props.isPrimary ? "text-white" : "text-dark"}>Configure Adapters</Link></h4>
+                                    <p className={this.props.isPrimary ? "text-white-50 f-14" : "text-muted f-14"}>DeepLineage can infer data from more than 70 applications 
+                                    that generate, trnasform and consumde data. In this step we configure your DeepLineage instance to talk with your applications</p>
                                 </div>
                             </Col>
 
@@ -36,9 +36,9 @@ export default class About extends Component {
                                     <div className="about-icon mb-4">
                                         <i className="mdi mdi-projector-screen"></i>
                                     </div>
-                                    <h4 className="fw-light"><Link to="#" className={this.props.isPrimary ? "text-white" : "text-dark"}>Strategy Solutions</Link></h4>
-                                    <p className={this.props.isPrimary ? "text-white-50 f-14" : "text-muted f-14"}>Nemo enim ipsam voluptatem quia voluptas sit aspernatur at aut odit
-                                        aut fugit sed quia consequuntur magni.</p>
+                                    <h4 className="fw-light"><Link to="#" className={this.props.isPrimary ? "text-white" : "text-dark"}>Infer Lineage</Link></h4>
+                                    <p className={this.props.isPrimary ? "text-white-50 f-14" : "text-muted f-14"}>After the adaptes are configured DeepLineage scours these
+                                    application systems to infer Lineage using Generative AI using our LLM Models</p>
                                 </div>
                             </Col>
 
@@ -47,9 +47,10 @@ export default class About extends Component {
                                     <div className="about-icon mb-4">
                                         <i className="mdi mdi-nature"></i>
                                     </div>
-                                    <h4 className="fw-light"><Link to="#" className={this.props.isPrimary ? "text-white" : "text-dark"}>Dynamic Growth</Link></h4>
-                                    <p className={this.props.isPrimary ? "text-white-50 f-14" : "text-muted f-14"}>Nemo enim ipsam voluptatem quia voluptas sit aspernatur at aut odit
-                                        aut fugit sed quia consequuntur magni.</p>
+                                    <h4 className="fw-light"><Link to="#" className={this.props.isPrimary ? "text-white" : "text-dark"}>Predictive Dashboard</Link></h4>
+                                    <p className={this.props.isPrimary ? "text-white-50 f-14" : "text-muted f-14"}>Once the Lineage is inferred our DeepLineage agents
+                                    run periodically. Our Machine Learning algorithms in conjunction with Generative AI learn your paterns and Start
+                                    predicting deviations and alerts. The Dashboard can also be used for Root Cause Analysis and "What If?" scenarios.  </p>
                                 </div>
                             </Col>
                         </Row>

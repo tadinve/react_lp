@@ -65,7 +65,7 @@ class NavbarPage extends Component {
                 activeNavClass="active"
                 className="navbar-collapse"
               >
-                <Nav navbar className="ms-auto navbar-center" id="mySidenav">
+                <Nav navbar className="ms-auto navbar-center " id="mySidenav">
                   {this.props.navItems.map((item, key) => (
                     <NavItem
                       key={key}

@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-import home1 from '../../assets/images/home-2-img.png';
+import home1 from '../../assets/images/datalineage.png';
 // import home2 from '../../assets/images/home-2-bg.png';
 import home2 from '../../assets/images/homr-2-bg-bottom.png';
 

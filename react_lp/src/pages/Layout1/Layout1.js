@@ -13,6 +13,7 @@ const Blog = React.lazy(() => import("../../component/Blog"));
 const Contact = React.lazy(() => import("../../component/Contact"));
 const Footer = React.lazy(() => import("../../component/Footer/Footer"));
 
+
 // import { Spinner } from "reactstrap";
 
 class Layout_1 extends Component {
@@ -20,14 +21,14 @@ class Layout_1 extends Component {
     super(props);
     this.state = {
       navItems: [
-        { id: 1, idnm: "home", navheading: "Home" },
-        { id: 2, idnm: "about", navheading: "About" },
-        { id: 3, idnm: "services", navheading: "Services" },
-        { id: 4, idnm: "features", navheading: "Features" },
-        { id: 5, idnm: "pricing", navheading: "Pricing" },
-        { id: 6, idnm: "clients", navheading: "Clients" },
-        { id: 7, idnm: "blog", navheading: "Blog" },
-        { id: 7, idnm: "contact", navheading: "Contact Us" },
+        { id: 1, idnm: "applications", navheading: "Applications" },
+        { id: 2, idnm: "catalog", navheading: "Catalog" },
+        // { id: 3, idnm: "services", navheading: "Services" },
+        // { id: 4, idnm: "features", navheading: "Features" },
+        // { id: 5, idnm: "pricing", navheading: "Pricing" },
+        // { id: 6, idnm: "clients", navheading: "Clients" },
+        // { id: 7, idnm: "blog", navheading: "Blog" },
+        // { id: 7, idnm: "contact", navheading: "Contact Us" },
       ],
       pos: document.documentElement.scrollTop,
       imglight: true,
