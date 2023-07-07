@@ -67,8 +67,8 @@ class scrollSpy extends Component {
                 let sectionID = this.getNavToSectionID(navLink.getAttribute("href"));
 
                 if (sectionID) {
-                    let scrollTargetPosition = document.getElementById(sectionID).offsetTop - (this.headerBackground ? document.querySelector("div[data-nav='list']").scrollHeight : 0);
-                    this.scrollTo(window.pageYOffset, scrollTargetPosition, this.scrollDuration);
+                    // let scrollTargetPosition = document.getElementById(sectionID).offsetTop - (this.headerBackground ? document.querySelector("div[data-nav='list']").scrollHeight : 0);
+                    // this.scrollTo(window.pageYOffset, scrollTargetPosition, this.scrollDuration);
                 } else {
                     this.scrollTo(window.pageYOffset, 0, this.scrollDuration);
                 }
@@ -85,22 +85,22 @@ class scrollSpy extends Component {
     scrollSection = () => {
             let scrollSectionOffsetTop;
             this.scrollTargetIds.forEach((sectionID, index) => {
-                scrollSectionOffsetTop = document.getElementById(sectionID).offsetTop - (this.headerBackground ? document.querySelector("div[data-nav='list']").scrollHeight : 0);
+            //     scrollSectionOffsetTop = document.getElementById(sectionID).offsetTop - (this.headerBackground ? document.querySelector("div[data-nav='list']").scrollHeight : 0);
 
-                if (window.pageYOffset >= scrollSectionOffsetTop && window.pageYOffset < scrollSectionOffsetTop + document.getElementById(sectionID).scrollHeight) {
-                    this.getNavLinkElement(sectionID).classList.add(this.activeNavClass);
-                    this.getNavLinkElement(sectionID).parentNode.classList.add(this.activeNavClass);
-                    this.clearOtherNavLinkActiveStyle(sectionID)
-                } else {
-                    this.getNavLinkElement(sectionID).classList.remove(this.activeNavClass);
-                    this.getNavLinkElement(sectionID).parentNode.classList.remove(this.activeNavClass);
-                }
+            //     if (window.pageYOffset >= scrollSectionOffsetTop && window.pageYOffset < scrollSectionOffsetTop + document.getElementById(sectionID).scrollHeight) {
+            //         this.getNavLinkElement(sectionID).classList.add(this.activeNavClass);
+            //         this.getNavLinkElement(sectionID).parentNode.classList.add(this.activeNavClass);
+            //         this.clearOtherNavLinkActiveStyle(sectionID)
+            //     } else {
+            //         this.getNavLinkElement(sectionID).classList.remove(this.activeNavClass);
+            //         this.getNavLinkElement(sectionID).parentNode.classList.remove(this.activeNavClass);
+            //     }
 
-                if (window.innerHeight + window.pageYOffset >= document.body.scrollHeight && index === this.scrollTargetIds.length - 1) {
-                    this.getNavLinkElement(sectionID).classList.add(this.activeNavClass);
-                    this.getNavLinkElement(sectionID).parentNode.classList.add(this.activeNavClass);
-                    this.clearOtherNavLinkActiveStyle(sectionID);
-                }
+            //     if (window.innerHeight + window.pageYOffset >= document.body.scrollHeight && index === this.scrollTargetIds.length - 1) {
+            //         this.getNavLinkElement(sectionID).classList.add(this.activeNavClass);
+            //         this.getNavLinkElement(sectionID).parentNode.classList.add(this.activeNavClass);
+            //         this.clearOtherNavLinkActiveStyle(sectionID);
+            //     }
             });
     }
     clearOtherNavLinkActiveStyle(excludeSectionID) {
